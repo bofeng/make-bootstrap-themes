@@ -83,14 +83,14 @@ function test() {
         rgb = hex2rgb(color),
         hsl = rgb2hsl(rgb.r, rgb.g, rgb.b);
 
-    console.log('Convert to HSL color space: ', hsl);
+    console.log('To HSL color space: ', hsl);
     // increase lightness by 15%
     hsl.l += 0.15;
-    console.log('Adding 15% lightness: ', hsl);
+    console.log('Add 15% lightness: ', hsl);
     // convert HSL back to RGB
     rgb = hsl2rgb(hsl.h, hsl.s, hsl.l);
-    console.log('Convert to RGB color space: ', rgb);
-    console.log('Hex is: ', rgb2hex(rgb.r, rgb.g, rgb.b));
+    console.log('To RGB color space: ', rgb);
+    console.log('Color hex code is: ', rgb2hex(rgb.r, rgb.g, rgb.b));
 }
 
 
