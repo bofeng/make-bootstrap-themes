@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Theme Styles</title>
+    <link rel="stylesheet" href="less/bootstrap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <style>.section-header {margin-top: 60px;}</style>
+</head>
+<body>
+<div class="container">
+    <h1 style="border-bottom:2px solid #888; padding-bottom:20px">Theme Styles</h1>
+    <h2 class="section-header">Navbar</h2>
+    <hr/>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-default">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Navbar Default</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-default">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Link A</a></li>
+                        <li><a href="#">Link B</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Link after divider</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Alerts <span class="badge">3</span></a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-default">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Navbar Inverse</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-default">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Link A</a></li>
+                        <li><a href="#">Link B</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Link after divider</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Alerts <span class="badge">3</span></a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 class="section-header">Typography</h2>
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <h1>Heading 1, h1</h1>
+            <h2>Heading 2, h2</h2>
+            <h3>Heading 3, h3</h3>
+            <h4>Heading 4, h4</h4>
+            <h5>Heading 5, h5</h5>
+            <h6>Heading 6, h6</h6>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <h3>Paragraphs</h3>
+            <p>
+                Here is a paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </p>
+            <p>
+                <em>em text here</em>, and <strong>strong text here</strong>,
+                we also have a <a href="#">Link</a>.
+            </p>
+            <p>
+                Normal text, <small>small text</small> and <big>big text</big>.
+            </p>
+            <p>
+                Here is some code: <code>print "hello world"</code>
+            </p>
+            <p>
+                Preformatted text inside <code>pre</code> tag:
+                <pre>body {
+    font-size: 16px;
+}</pre>
+            </p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <h3>Blockquotes</h3>
+            <blockquote>
+                <p>
+                    Blockquote: quoted text here
+                </p>
+                <small>some celebrity</small>
+            </blockquote>
+            <blockquote class="blockquote-reverse">
+                <p>
+                    Blockquote right-aligned: quoted text here
+                </p>
+                <small>some celebrity</small>
+            </blockquote>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <h3>Contextual text:</h3>
+            <p class="text-muted">This text use text-muted class.</p>
+            <p class="text-primary">This text use text-primary class.</p>
+            <p class="text-warning">This text use text-warning class.</p>
+            <p class="text-danger">This text use text-danger class.</p>
+            <p class="text-success">This text use text-success class.</p>
+            <p class="text-info">This text use text-info class.</p>
+
+            <p class="bg-primary">Text inside p with bg-primary class</p>
+            <p class="bg-warning">Text inside p with bg-warning class</p>
+            <p class="bg-danger">Text inside p with bg-danger class</p>
+            <p class="bg-success">Text inside p with bg-success class</p>
+            <p class="bg-info">Text inside p with bg-info class</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">Alerts</h2>
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="alert alert-warning">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <h4>Warning!</h4>
+                <p>
+                    With alert-warning class. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    <a href="#" class="alert-link">Link in Alert</a>.
+                </p>
+            </div>
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <h4>Danger!</h4>
+                <p>
+                    With alert-danger class. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    <a href="#" class="alert-link">Link in Alert</a>.
+                </p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <h4>Success!</h4>
+                <p>
+                    With alert-success class. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    <a href="#" class="alert-link">Link in Alert</a>.
+                </p>
+            </div>
+            <div class="alert alert-info">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <h4>Info</h4>
+                <p>
+                    With alert-info class. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    <a href="#" class="alert-link">Link in Alert</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-header">Labels and Badges</h2>
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <h3>Labels</h3>
+            <ul class="list-inline">
+                <li><span class="label label-default">Default</span></li>
+                <li><span class="label label-primary">Primary</span></li>
+                <li><span class="label label-success">Success</span></li>
+                <li><span class="label label-warning">Warning</span></li>
+                <li><span class="label label-danger">Danger</span></li>
+                <li><span class="label label-info">Info</span></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h3>Badges</h3>
+            <h5>Default badges: <span class="badge">2</span></h5>
+            <h5>Badges with nav:</h5>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">Active Item <span class="badge">3</span></a></li>
+                <li><a href="#">Another Item <span class="badge">4</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-header">List groups</h2>
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <ul class="list-group">
+                <li class="list-group-item"><span class="badge">1</span> List group item 1</li>
+                <li class="list-group-item"><span class="badge">3</span>List group item 2</li>
+                <li class="list-group-item">List group item 3</li>
+                <li class="list-group-item">List group item 4</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    <span class="badge">2</span>
+                    Link item 1
+                </a>
+                <a href="#" class="list-group-item">
+                    <span class="badge">4</span>
+                    Link item 2
+                </a>
+                <a href="#" class="list-group-item">Link item 3</a>
+                <a href="#" class="list-group-item">Link item 4</a>
+              </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-header">Progress bars</h2>
+    <hr/>
+    <div>
+        <h3>Default bars</h3>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" style="width: 20%"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
+        </div>
+        <h3>Striped bars</h3>
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-info" style="width: 20%"></div>
+        </div>
+        <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+        </div>
+        <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
+        </div>
+        <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
+        </div>
+    </div>
+
+    <h2 class="section-header">Wells</h2>
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <div class="well">
+                Text in a default well.
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="well well-sm">
+                Text in a small well.
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="well well-lg">
+                Text in a large well.
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
