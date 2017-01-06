@@ -1,0 +1,22 @@
+.navbar {
+  border-radius: 0;
+  border: none;
+}
+.navbar-default {
+  border-bottom: 2px solid #70A1D7;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #70A1D7;
+}
+.navbar-inverse {
+  border-bottom: 2px solid #F35B25;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #F35B25;
+}

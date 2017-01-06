@@ -1,0 +1,31 @@
+@navbar-default-border-color: #70A1D7;
+@navbar-inverse-border-color: #F35B25;
+
+.navbar {
+    border-radius: 0;
+    border: none;
+}
+
+.navbar-default {
+    border-bottom: 2px solid @navbar-default-border-color;
+    .navbar-nav {
+        > .active > a {
+            &, &:hover, &:focus {
+                color: #fff;
+                background-color: @navbar-default-border-color;
+            }
+        }
+    }
+}
+
+.navbar-inverse {
+    border-bottom: 2px solid @navbar-inverse-border-color;
+    .navbar-nav {
+        > .active > a {
+            &, &:hover, &:focus {
+                color: #fff;
+                background-color: @navbar-inverse-border-color;
+            }
+        }
+    }
+}
