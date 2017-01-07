@@ -1,0 +1,15 @@
+@import "../../bootstrap-3.3.7/less/bootstrap.less";
+@import "my-variables.less";
+
+.navbar {
+    border-radius: 0;
+    border: none;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    &-default {
+        border-bottom-color: @navbar-default-link-active-bg;
+    }
+    &-inverse {
+        border-bottom-color: @navbar-inverse-link-active-bg;
+    }
+}
