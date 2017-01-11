@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+
+@import "../../bootstrap-3.3.7/less/bootstrap.less";
+@import "my-variables.less";
+
+
+.navbar {
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+    .box-shadow(0px 1px 1px 0px rgba(0, 0, 102, 0.1));
+
+    &-default {
+        .badge {
+            background-color: #F23557;
+        }
+    }
+    &-inverse {
+        .badge {
+            background-color: #f67f55;
+        }
+    }
+}
