@@ -1,0 +1,9 @@
+$color-warning: #ff6600;
+.panel-warning {
+    color: $color-warning;
+}
+
+$alertname: alert;
+.#{$alertname}-info {
+    background-color: #339900;
+}
