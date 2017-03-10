@@ -91,6 +91,10 @@
 @input-color: @text-color;
 @input-border: darken(@brand-secondary, 5%);
 @input-border-focus: lighten(@brand-secondary, 10%);
+@input-bg-disabled: desaturate(@brand-secondary, 10%);
+
+@legend-color: @text-color;
+@legend-border-color: @brand-secondary;
 
 //== Navbar
 @navbar-height:                    60px;
@@ -117,6 +121,7 @@
 @thumbnail-border: @brand-secondary;
 
 // Nav
+@nav-link-hover-bg: @brand-secondary;
 @nav-tabs-border-color: @brand-secondary;
 @nav-tabs-link-hover-border-color: @brand-secondary;
 @nav-tabs-active-link-hover-bg: @brand-secondary;
@@ -151,16 +156,45 @@
 @pagination-active-bg:                 @brand-primary;
 @pagination-active-border:             transparent;
 
-@pagination-disabled-color:            @brand-secondary;
-@pagination-disabled-bg: lighten(@brand-secondary, 20%);
+@pagination-disabled-color:            darken(@text-color, 20%);
+@pagination-disabled-bg: desaturate(@brand-secondary, 10%);
 @pagination-disabled-border:           transparent;
 
 // Pager
 
 
+// Badge
+@badge-bg: @brand-primary;
+
 // List group
 @list-group-bg: @brand-secondary;
-@list-group-border: transparent;
+@list-group-border: lighten(@list-group-bg, 5%);
+@list-group-link-heading-color: @text-color;
+@list-group-link-color: @text-color;
+@list-group-link-hover-color: @text-color;
+@list-group-hover-bg: @list-group-border;
+
+
+// Panels
+@panel-bg: @brand-secondary;
+
+//** Border color for elements within panels
+@panel-inner-border:          transparent;
+@panel-footer-bg:             darken(@brand-secondary, 5%);
+
+@panel-default-border:        transparent;
+@panel-default-heading-bg:    darken(@brand-secondary, 5%);
+
+@panel-primary-border:        transparent;
+@panel-success-border:        transparent;
+@panel-info-border:           transparent;
+@panel-warning-border:        transparent;
+@panel-danger-border:         transparent;
+
+
+// Wells
+@well-bg: @brand-secondary;
+@well-border: lighten(@brand-secondary, 5%);
 
 
 // Modals
