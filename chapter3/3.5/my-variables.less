@@ -1,68 +1,51 @@
-// font styles
-@font-family-sans-serif: "Roboto Condensed", Helvetica, Arial, sans-serif;
-@headings-font-weight: 700;
+// Global settings
+// ------------------------------
+// ## font styles
+@font-family-sans-serif:    "Roboto Condensed", Helvetica, Arial, sans-serif;
+@headings-font-weight:      700;
 
-// brand contextual colors
-@brand-primary: #ee6363;
-@brand-success: #62c462;
-@brand-info:    #5bc0de;
-@brand-warning: #f0ad4e;
-@brand-danger:  #C31207;
+// ## background color
+@body-bg:           #233142;
+@text-color:        #E3E3E3;
 
-@brand-secondary: #455D7A;
+// ## brand contextual colors
+@brand-primary:     #ee6363;
+@brand-success:     #62c462;
+@brand-info:        #5bc0de;
+@brand-warning:     #f0ad4e;
+@brand-danger:      #C31207;
+@brand-secondary:   #455D7A;
 
-// background color
-@body-bg: #233142;
-@text-color: #E3E3E3;
+// ## Link and hr color
+@link-color:        @brand-primary;
+@link-hover-color:  darken(@link-color, 10%);
 
-@link-hover-color:      darken(@link-color, 10%);
+@hr-border:         @brand-secondary;
 
-@hr-border: @brand-secondary;
+// ## state contextual colors
+@state-success-text:    #fff;
+@state-success-bg:      @brand-success;
+@state-success-border:  darken(@brand-success, 10%);
 
-// code
-@code-color: @text-color; 
-@code-bg: @brand-secondary;
-@pre-color: @text-color;
-@pre-bg: @brand-secondary;
-@pre-border-color: darken(@brand-secondary, 20%);
+@state-info-text:       #fff;
+@state-info-bg:         @brand-info;
+@state-info-border:     @darken(@brand-info, 10%);
 
-@text-muted: lighten(@gray-base, 60%);
+@state-warning-text:    #fff;
+@state-warning-bg:      @brand-warning;
+@state-warning-border:  @darken(@brand-warning, 10%);
 
-// blockquote
-@blockquote-border-color: @brand-secondary;
-@blockquote-small-color: @text-muted;
+@state-danger-text:     #fff;
+@state-danger-bg:       @brand-danger;
+@state-danger-border:   @darken(@brand-danger, 10%);
 
-// state contextual colors
-@state-success-text:        #fff;
-@state-success-bg:          @brand-success;
-@state-success-border:      darken(@brand-success, 10%);
+// ## border radius
+@border-radius-base:    2px;
+@border-radius-large:   4px;
+@border-radius-small:   3px;
+@pager-border-radius:   2px;
 
-@state-info-text:           #fff;
-@state-info-bg:             @brand-info;
-@state-info-border:         @darken(@brand-info, 10%);
-
-@state-warning-text:        #fff;
-@state-warning-bg:          @brand-warning;
-@state-warning-border:      @darken(@brand-warning, 10%);
-
-@state-danger-text:         #fff;
-@state-danger-bg:           @brand-danger;
-@state-danger-border:       @darken(@brand-danger, 10%);
-
-// panels
-@panel-success-text: #fff;
-@panel-success-heading-bg: @brand-success;
-
-@panel-warning-text: #fff;
-@panel-warning-heading-bg: @brand-warning;
-
-@panel-danger-text: #fff;
-@panel-danger-heading-bg: @brand-danger;
-
-@panel-info-text: #fff;
-@panel-info-heading-bg: @brand-info;
-
-// variables for components
+// ## paddings
 @padding-base-vertical:     8px;
 @padding-base-horizontal:   16px;
 
@@ -75,28 +58,28 @@
 @padding-xs-vertical:       2px;
 @padding-xs-horizontal:     6px;
 
-//== Buttons
-@btn-default-color:              #fff;
-@btn-default-bg:                 @brand-secondary;
-@btn-default-border:             darken(@btn-default-bg, 5%);
 
-@border-radius-base: 2px;
-@border-radius-large: 4px;
-@border-radius-small: 3px;
 
-@pager-border-radius: 2px;
+// Typography
+// ------------------------------
+// ## code and pre
+@code-color:                @text-color; 
+@code-bg:                   @brand-secondary;
+@pre-color:                 @text-color;
+@pre-bg:                    @brand-secondary;
+@pre-border-color:          darken(@brand-secondary, 20%);
 
-// == Forms
-@input-bg: @brand-secondary;
-@input-color: @text-color;
-@input-border: darken(@brand-secondary, 5%);
-@input-border-focus: lighten(@brand-secondary, 10%);
-@input-bg-disabled: desaturate(@brand-secondary, 10%);
+// ## blockquote
+@blockquote-border-color:   @brand-secondary;
+@blockquote-small-color:    @text-muted;
 
-@legend-color: @text-color;
-@legend-border-color: @brand-secondary;
+// ## text contextual
+@text-muted:                lighten(@gray-base, 60%);
 
-//== Navbar
+
+
+// Navbar
+// ------------------------------
 @navbar-height:                    60px;
 
 @navbar-default-color:             @text-color;
@@ -117,94 +100,173 @@
 
 @navbar-inverse-brand-hover-color: @navbar-inverse-link-hover-color;
 
+
+
+// Buttons
+// ------------------------------
+@btn-default-color:             #fff;
+@btn-default-bg:                @brand-secondary;
+@btn-default-border:            darken(@btn-default-bg, 5%);
+
+
+
+// Forms
+// ------------------------------
+@input-bg:                  @brand-secondary;
+@input-color:               @text-color;
+@input-border:              darken(@brand-secondary, 5%);
+@input-border-focus:        lighten(@brand-secondary, 10%);
+@input-bg-disabled:         desaturate(@brand-secondary, 10%);
+
+@legend-color:              @text-color;
+@legend-border-color:       @brand-secondary;
+
+
+
+// Table
+// ------------------------------
+@table-bg:                  transparent;
+@table-bg-accent:           @brand-secondary;
+@table-bg-hover:            lighten(@brand-secondary, 3%);
+@table-bg-active:           @table-bg-hover;
+@table-border-color:        lighten(@brand-secondary, 3%);  
+
+
+
 // Images
-@thumbnail-border: @brand-secondary;
+// ------------------------------
+@thumbnail-border:          @brand-secondary;
+
+
 
 // Nav
-@nav-link-hover-bg: @brand-secondary;
-@nav-tabs-border-color: @brand-secondary;
-@nav-tabs-link-hover-border-color: @brand-secondary;
-@nav-tabs-active-link-hover-bg: @brand-secondary;
-@nav-tabs-active-link-hover-color: #fff;
-@nav-tabs-active-link-hover-border-color:   @brand-secondary;
-@nav-tabs-justified-link-border-color: @brand-secondary;
-@nav-tabs-justified-active-link-border-color:     @brand-secondary;
+// ------------------------------
+@nav-link-hover-bg:                             @brand-secondary;
+
+@nav-tabs-border-color:                         @brand-secondary;
+@nav-tabs-link-hover-border-color:              @brand-secondary;
+
+@nav-tabs-active-link-hover-bg:                 @brand-secondary;
+@nav-tabs-active-link-hover-color:              #fff;
+@nav-tabs-active-link-hover-border-color:       @brand-secondary;
+
+@nav-tabs-justified-link-border-color:          @brand-secondary;
+@nav-tabs-justified-active-link-border-color:   @brand-secondary;
+
 
 
 // Breadcrumb
-//** Breadcrumb background color
+// ------------------------------
 @breadcrumb-bg:                 @brand-secondary;
-//** Breadcrumb text color
 @breadcrumb-color:              @text-color;
-//** Text color of current page in the breadcrumb
 @breadcrumb-active-color:       @text-color;
-//** Textual separator for between breadcrumb elements
-@breadcrumb-separator:          "/";
 
 
 
 // Pagination
-@pagination-color:                     @text-color;
-@pagination-bg:                        @brand-secondary;
-@pagination-border:                    transparent;
+// ------------------------------
+@pagination-color:                  @text-color;
+@pagination-bg:                     @brand-secondary;
+@pagination-border:                 transparent;
 
-@pagination-hover-color:               #fff;
-@pagination-hover-bg:                  darken(@brand-secondary, 5%);
-@pagination-hover-border:              transparent;
+@pagination-hover-color:            #fff;
+@pagination-hover-bg:               darken(@brand-secondary, 5%);
+@pagination-hover-border:           transparent;
 
-@pagination-active-color:              #fff;
-@pagination-active-bg:                 @brand-primary;
-@pagination-active-border:             transparent;
+@pagination-active-color:           #fff;
+@pagination-active-bg:              @brand-primary;
+@pagination-active-border:          transparent;
 
-@pagination-disabled-color:            darken(@text-color, 20%);
-@pagination-disabled-bg: desaturate(@brand-secondary, 10%);
-@pagination-disabled-border:           transparent;
+@pagination-disabled-color:         darken(@text-color, 20%);
+@pagination-disabled-bg:            desaturate(@brand-secondary, 10%);
+@pagination-disabled-border:        transparent;
 
-// Pager
 
 
 // Badge
-@badge-bg: @brand-primary;
+// ------------------------------
+@badge-bg:      @brand-primary;
+
+
 
 // List group
-@list-group-bg: @brand-secondary;
-@list-group-border: lighten(@list-group-bg, 5%);
-@list-group-link-heading-color: @text-color;
-@list-group-link-color: @text-color;
-@list-group-link-hover-color: @text-color;
-@list-group-hover-bg: @list-group-border;
+// ------------------------------
+@list-group-bg:                     @brand-secondary;
+@list-group-border:                 lighten(@list-group-bg, 3%);
+@list-group-link-heading-color:     @text-color;
+@list-group-link-color:             @text-color;
+@list-group-link-hover-color:       @text-color;
+@list-group-hover-bg:               @list-group-border;
+
 
 
 // Panels
-@panel-bg: @brand-secondary;
+// ------------------------------
+// ## panel contextual color
+@panel-success-text:            #fff;
+@panel-success-heading-bg:      @brand-success;
 
-//** Border color for elements within panels
-@panel-inner-border:          transparent;
-@panel-footer-bg:             darken(@brand-secondary, 5%);
+@panel-warning-text:            #fff;
+@panel-warning-heading-bg:      @brand-warning;
 
-@panel-default-border:        transparent;
-@panel-default-heading-bg:    darken(@brand-secondary, 5%);
+@panel-danger-text:             #fff;
+@panel-danger-heading-bg:       @brand-danger;
 
-@panel-primary-border:        transparent;
-@panel-success-border:        transparent;
-@panel-info-border:           transparent;
-@panel-warning-border:        transparent;
-@panel-danger-border:         transparent;
+@panel-info-text:               #fff;
+@panel-info-heading-bg:         @brand-info;
+
+@panel-bg:                      @brand-secondary;
+
+// ## Border color within panels
+@panel-inner-border:            transparent;
+@panel-footer-bg:               darken(@brand-secondary, 5%);
+
+@panel-default-border:          transparent;
+@panel-default-heading-bg:      darken(@brand-secondary, 5%);
+
+@panel-primary-border:          transparent;
+@panel-success-border:          transparent;
+@panel-info-border:             transparent;
+@panel-warning-border:          transparent;
+@panel-danger-border:           transparent;
+
 
 
 // Wells
-@well-bg: @brand-secondary;
-@well-border: lighten(@brand-secondary, 5%);
+// ------------------------------
+@well-bg:       @brand-secondary;
+@well-border:   lighten(@brand-secondary, 5%);
+
 
 
 // Modals
-@modal-content-bg:                             @brand-secondary;
-@modal-content-border-color:                   transparent;
-@modal-content-fallback-border-color:          transparent;
+// ------------------------------
+@modal-content-bg:                      @brand-secondary;
+@modal-content-border-color:            transparent;
+@modal-content-fallback-border-color:   transparent;
 
-@modal-backdrop-bg:           #000;
-@modal-backdrop-opacity:      .5; 
-@modal-header-border-color:   @body-bg;
-@modal-footer-border-color:   @modal-header-border-color;
+@modal-backdrop-bg:                     #000;
+@modal-backdrop-opacity:                .5; 
+@modal-header-border-color:             @body-bg;
+@modal-footer-border-color:             @modal-header-border-color;
 
+
+
+// Close
+// ------------------------------
+@close-color:           #fff;
+@close-text-shadow:     none;
+
+
+
+// Popovers
+// ------------------------------
+@popover-bg:            @brand-secondary;
+@popover-border-color:  lighten(@brand-secondary, 5%);
+
+
+
+// Jumbotron
+// ------------------------------
+@jumbotron-bg:      @brand-secondary;
 
