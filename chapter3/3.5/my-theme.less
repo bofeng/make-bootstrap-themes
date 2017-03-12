@@ -11,23 +11,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-primary, .text-primary:hover {
-    color: @brand-primary;
+    .text-emphasis-variant(@brand-primary);
 }
 
 .text-success, .text-success:hover {
-    color: @brand-success;
+    .text-emphasis-variant(@brand-success);
 }
 
 .text-danger, .text-danger:hover {
-    color: @brand-danger;
+    .text-emphasis-variant(@brand-danger);
 }
 
 .text-warning, .text-warning:hover {
-    color: @brand-warning;
+    .text-emphasis-variant(@brand-warning);
 }
 
 .text-info, .text-info:hover {
-    color: @brand-info;
+    .text-emphasis-variant(@brand-info);
+}
+
+.bg-success {
+    color: #fff;
+}
+.bg-info {
+    color: #fff;
+}
+.bg-warning {
+    color: #fff;
+}
+.bg-danger {
+    color: #fff;
 }
 
 

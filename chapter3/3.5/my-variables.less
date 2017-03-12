@@ -6,7 +6,7 @@
 
 // ## background color
 @body-bg:           #233142;
-@text-color:        #E3E3E3;
+@text-color:        #e3e3e3;
 
 // ## brand contextual colors
 @brand-primary:     #ee6363;
@@ -25,19 +25,19 @@
 // ## state contextual colors
 @state-success-text:    #fff;
 @state-success-bg:      @brand-success;
-@state-success-border:  darken(@brand-success, 10%);
+@state-success-border:  lighten(@brand-success, 5%);
 
 @state-info-text:       #fff;
 @state-info-bg:         @brand-info;
-@state-info-border:     @darken(@brand-info, 10%);
+@state-info-border:     lighten(@brand-info, 5%);
 
 @state-warning-text:    #fff;
 @state-warning-bg:      @brand-warning;
-@state-warning-border:  @darken(@brand-warning, 10%);
+@state-warning-border:  lighten(@brand-warning, 5%);
 
 @state-danger-text:     #fff;
 @state-danger-bg:       @brand-danger;
-@state-danger-border:   @darken(@brand-danger, 10%);
+@state-danger-border:   lighten(@brand-danger, 5%);
 
 // ## border radius
 @border-radius-base:    2px;
@@ -83,15 +83,15 @@
 @navbar-height:                    60px;
 
 @navbar-default-color:             @text-color;
-@navbar-default-bg:                #455D7A;
-@navbar-default-link-color:        #e8e8e8;
+@navbar-default-bg:                @brand-secondary;
+@navbar-default-link-color:        @text-color;
 @navbar-default-link-hover-color:  #fff;
 @navbar-default-link-hover-bg:     transparent;
 @navbar-default-link-active-color: #fff;
 @navbar-default-link-active-bg:    tranparent;
 
 @navbar-inverse-color:             @body-bg;
-@navbar-inverse-bg:                #E3E3E3;
+@navbar-inverse-bg:                lighten(@text-color, 5%);
 @navbar-inverse-link-color:        @brand-secondary; 
 @navbar-inverse-link-hover-color:  darken(@brand-secondary, 10%);
 @navbar-inverse-link-hover-bg:     transparent;
