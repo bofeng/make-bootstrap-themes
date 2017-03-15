@@ -4,6 +4,43 @@
 @import "my-variables.less";
 
 
+// Typography
+.text-primary, .text-primary:hover {
+    .text-emphasis-variant(@brand-primary);
+}
+
+.text-success, .text-success:hover {
+    .text-emphasis-variant(@brand-success);
+}
+
+.text-danger, .text-danger:hover {
+    .text-emphasis-variant(@brand-danger);
+}
+
+.text-warning, .text-warning:hover {
+    .text-emphasis-variant(@brand-warning);
+}
+
+.text-info, .text-info:hover {
+    .text-emphasis-variant(@brand-info);
+}
+
+.bg-success {
+    color: #fff;
+}
+.bg-info {
+    color: #fff;
+}
+.bg-warning {
+    color: #fff;
+}
+.bg-danger {
+    color: #fff;
+}
+
+
+
+// Navbar
 .navbar {
     border: none;
     font-weight: 500;
@@ -31,10 +68,42 @@
 }
 
 
+
+// Forms
+.has-warning {
+    .form-control-validation(@text-color: @brand-warning; @border-color: @brand-warning; @background-color: @input-bg);
+}
+
+.has-error {
+    .form-control-validation(@text-color: @brand-danger; @border-color: @brand-danger; @background-color: @input-bg);
+}
+
+.has-success {
+    .form-control-validation(@text-color: @brand-success; @border-color: @brand-success; @background-color: @input-bg);
+}
+
+
+
+// Nav
+.nav {
+    .open > a { 
+        &,  
+        &:hover,
+        &:focus {
+            border-color: transparent;
+        }   
+    }
+}
+
+
+
+// Alert
 .alert {
     .alert-link {
         color: #fff;
     }
 }
+
+
 
 

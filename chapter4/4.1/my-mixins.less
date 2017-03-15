@@ -71,3 +71,52 @@
         color: #fff;
     }
 }
+
+
+.pagination-contextual(@bg-color) {
+    > li {
+        > a,
+        > span {
+            color: #fff;;
+            background-color: @bg-color;
+            border: 1px solid darken(@bg-color, 5%);
+        }
+    }
+
+    > li > a,
+    > li > span {
+        &:hover,
+        &:focus {
+            color: #fff;
+            background-color: darken(@bg-color, 5%);
+            border-color: darken(@bg-color, 5%);
+        }
+    }
+
+    > .active > a,
+    > .active > span {
+        &,
+        &:hover,
+        &:focus {
+            color: #fff;
+            background-color: darken(@bg-color, 5%);
+            border-color: darken(@bg-color, 5%);
+            cursor: default;
+        }
+    }
+
+    > .disabled {
+        > span,
+        > span:hover,
+        > span:focus,
+        > a,
+        > a:hover,
+        > a:focus {
+            color: #fff;
+            background-color: desaturate(@bg-color, 10%);
+            border-color: darken(@bg-color, 5%);
+        }
+    }
+}
+
+
