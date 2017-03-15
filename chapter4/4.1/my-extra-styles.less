@@ -1,0 +1,105 @@
+@import "../../bootstrap-3.3.7/less/variables.less";
+@import "../../bootstrap-3.3.7/less/mixins.less";
+@import "my-mixins.less";
+@import "my-variables.less";
+
+
+// == Utility classes
+// mt-zero, mt-xs, mt-sm, mt-md, mt-lg
+.createSpacing(mt, margin-top);
+.createSpacing(mb, margin-bottom);
+.createSpacing(ml, margin-left);
+.createSpacing(mr, margin-right);
+// pt-zero, pt-xs, pt-sm, pt-md, pt-lg
+.createSpacing(pt, padding-top);
+.createSpacing(pb, padding-bottom);
+.createSpacing(pl, padding-left);
+.createSpacing(pr, padding-right);
+
+
+.transition-eio {
+    .transition(all 0.3s ease-in-out);
+}
+
+
+
+// == Navbar
+.navbar {
+    a {
+        .transition-eio;
+    }
+
+    &-menu-top {
+        background: transparent;
+        color: #fff;
+        padding-top: 25px;
+        .box-shadow(none);
+
+        .navbar-brand {
+            font-size: 1.6em;
+            color: #f1f1f1;
+            padding: 10px 15px;
+            &:visited, &:hover {
+                color: #f1f1f1;
+            }
+        }
+
+        .navbar-nav > li {
+            > a {
+                font-size:1.1em;
+                font-weight: 500;
+            }
+            > a:link, > a:visited {
+                color: #f1f1f1;
+            }
+            > a:hover, > a:active {
+                color: @brand-primary;
+            }
+            &.active > a {
+                color: @brand-primary;
+            }
+        }
+    }
+}
+
+
+.btn {
+    .transition-eio;
+
+    &-default-outline {
+       .button-outline(#555);
+    }
+    &-primary-outline {
+       .button-outline(@brand-primary);
+    }
+    &-success-outline {
+       .button-outline(@brand-success);
+    }
+    &-info-outline {
+       .button-outline(@brand-info);
+    }
+    &-warning-outline {
+       .button-outline(@brand-warning);
+    }
+    &-danger-outline {
+       .button-outline(@brand-danger);
+    }
+}
+
+
+// Breadcrumb
+.breadcrumb-primary {
+    .breadcrumb-contextual(@brand-primary);
+}
+.breadcrumb-success {
+    .breadcrumb-contextual(@brand-success);
+}
+.breadcrumb-info {
+    .breadcrumb-contextual(@brand-info);
+}
+.breadcrumb-warning {
+    .breadcrumb-contextual(@brand-warning);
+}
+.breadcrumb-danger {
+    .breadcrumb-contextual(@brand-danger);
+}

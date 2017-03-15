@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Additional styles</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my-theme.css"/>
+    <link rel="stylesheet" href="my-extra-styles.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+    .section-title {margin-top:40px; margin-bottom:30px; font-weight:500}
+    #header-bg-wrapper {height:500px;background:#333;position:relative;background:url('../header-bg.jpg') no-repeat;background-size:cover;}
+    #header-bg-wrapper h1 {color:#fff;padding-top:160px;margin-top:0px;font-size:45px;font-weight:600}
+    .section-subtitle {font-weight: 400}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-menu-top transition-eio" id="navbar-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-default">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="font-family:'Dosis'">
+                    <i class="fa fa-snowflake-o"></i>
+                    Snowflake
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="theme-styles.html">Theme Styles</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            Dropdown <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Link A</a></li>
+                            <li><a href="#">Link B</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Link after divider</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Alerts <span class="badge">3</span></a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="header-bg-wrapper">
+        <h1 class="text-center">Additional Styles</h1>
+        <div class="text-center" style="margin-top:120px">
+            <button class="btn btn-lg btn-primary">Explore <i class="fa fa-chevron-down"></i></button>
+        </div>
+    </div>
+    <div class="section container">
+        <h2 class="text-center section-title">Outline Buttons</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <p>Class <code>.btn-default</code></p>
+                <p>
+                    <button class="btn btn-default">Btn Default</button>
+                </p>
+                <p>Class <code>.btn-default-outline</code></p>
+                <p>
+                    <button class="btn btn-default-outline">Btn Default Outline</button>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <p>Class <code>.btn-primary</code></p>
+                <p>
+                    <button class="btn btn-primary">Btn Primary</button>
+                </p>
+                <p>Class <code>.btn-primary-outline</code></p>
+                <p>
+                    <button class="btn btn-primary-outline">Btn Primary Outline</button>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <p>Class <code>.btn-success</code></p>
+                <p>
+                    <button class="btn btn-success">Btn Success</button>
+                </p>
+                <p>Class <code>.btn-success-outline</code></p>
+                <p>
+                    <button class="btn btn-success-outline">Btn Default Outline</button>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <p>Class <code>.btn-info</code></p>
+                <p>
+                    <button class="btn btn-info">Btn Info</button>
+                </p>
+                <p>Class <code>.btn-info-outline</code></p>
+                <p>
+                    <button class="btn btn-info-outline">Btn Info Outline</button>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <p>Class <code>.btn-warning</code></p>
+                <p>
+                    <button class="btn btn-warning">Btn Warning</button>
+                </p>
+                <p>Class <code>.btn-warning-outline</code></p>
+                <p>
+                    <button class="btn btn-warning-outline">Btn Warning Outline</button>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <p>Class <code>.btn-danger</code></p>
+                <p>
+                    <button class="btn btn-danger">Btn Danger</button>
+                </p>
+                <p>Class <code>.btn-danger-outline</code></p>
+                <p>
+                    <button class="btn btn-danger-outline">Btn Danger Outline</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section container">
+        <h2 class="text-center section-title">Contextual Breadcrumb</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 mb-lg">
+                <h4 class="section-subtitle text-center">Breadcrumb Default</h4>
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li class="active">Subscribers</li>
+                </ol>
+            </div>
+            <div class="col-xs-12 col-sm-4 mb-lg">
+                <h4 class="section-subtitle text-center">Breadcrumb Primary</h4>
+                <ol class="breadcrumb breadcrumb-primary">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li class="active">Subscribers</li>
+                </ol>
+            </div>
+            <div class="col-xs-12 col-sm-4 mb-lg">
+                <h4 class="section-subtitle text-center">Breadcrumb Success</h4>
+                <ol class="breadcrumb breadcrumb-success">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li class="active">Subscribers</li>
+                </ol>
+            </div>
+            <div class="col-xs-12 col-sm-4 mb-lg">
+                <h4 class="section-subtitle text-center">Breadcrumb Info</h4>
+                <ol class="breadcrumb breadcrumb-info">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li class="active">Subscribers</li>
+                </ol>
+            </div>
+            <div class="col-xs-12 col-sm-4 mb-lg">
+                <h4 class="section-subtitle text-center">Breadcrumb Warning</h4>
+                <ol class="breadcrumb breadcrumb-warning">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li class="active">Subscribers</li>
+                </ol>
+            </div>
+            <div class="col-xs-12 col-sm-4 mb-lg">
+                <h4 class="section-subtitle text-center">Breadcrumb Danger</h4>
+                <ol class="breadcrumb breadcrumb-danger">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li class="active">Subscribers</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="section container">
+        <h2 class="text-center section-title">Spacing Utilities</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <p><b>margin-top</b></p>
+                <p><code>.mt-zero {margin-top: 0px}</code></p>
+                <p><code>.mt-xs {margin-top: 5px}</code></p>
+                <p><code>.mt-sm {margin-top: 12px}</code></p>
+                <p><code>.mt-md {margin-top: 20px}</code></p>
+                <p><code>.mt-lg {margin-top: 30px}</code></p>
+                <p><b>margin-bottom</b></p>
+                <p><code>.mb-zero {margin-bottom: 0px}</code></p>
+                <p><code>.mb-xs {margin-bottom: 5px}</code></p>
+                <p><code>.mb-sm {margin-bottom: 12px}</code></p>
+                <p><code>.mb-md {margin-bottom: 20px}</code></p>
+                <p><code>.mb-lg {margin-bottom: 30px}</code></p>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <p><b>margin-left</b></p>
+                <p><code>.ml-zero {margin-left: 0px}</code></p>
+                <p><code>.ml-xs {margin-left: 5px}</code></p>
+                <p><code>.ml-sm {margin-left: 12px}</code></p>
+                <p><code>.ml-md {margin-left: 20px}</code></p>
+                <p><code>.ml-lg {margin-left: 30px}</code></p>
+                <p><b>margin-right</b></p>
+                <p><code>.mr-zero {margin-right: 0px}</code></p>
+                <p><code>.mr-xs {margin-right: 5px}</code></p>
+                <p><code>.mr-sm {margin-right: 12px}</code></p>
+                <p><code>.mr-md {margin-right: 20px}</code></p>
+                <p><code>.mr-lg {margin-right: 30px}</code></p>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <p><b>padding-top</b></p>
+                <p><code>.pt-zero {padding-top: 0px}</code></p>
+                <p><code>.pt-xs {padding-top: 5px}</code></p>
+                <p><code>.pt-sm {padding-top: 12px}</code></p>
+                <p><code>.pt-md {padding-top: 20px}</code></p>
+                <p><code>.pt-lg {padding-top: 30px}</code></p>
+                <p><b>padding-bottom</b></p>
+                <p><code>.pb-zero {padding-bottom: 0px}</code></p>
+                <p><code>.pb-xs {padding-bottom: 5px}</code></p>
+                <p><code>.pb-sm {padding-bottom: 12px}</code></p>
+                <p><code>.pb-md {padding-bottom: 20px}</code></p>
+                <p><code>.pb-lg {padding-bottom: 30px}</code></p>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <p><b>padding-left</b></p>
+                <p><code>.pl-zero {padding-left: 0px}</code></p>
+                <p><code>.pl-xs {padding-left: 5px}</code></p>
+                <p><code>.pl-sm {padding-left: 12px}</code></p>
+                <p><code>.pl-md {padding-left: 20px}</code></p>
+                <p><code>.pl-lg {padding-left: 30px}</code></p>
+                <p><b>margin-right</b></p>
+                <p><code>.pr-zero {padding-right: 0px}</code></p>
+                <p><code>.pr-xs {padding-right: 5px}</code></p>
+                <p><code>.pr-sm {padding-right: 12px}</code></p>
+                <p><code>.pr-md {padding-right: 20px}</code></p>
+                <p><code>.pr-lg {padding-right: 30px}</code></p>
+            </div>
+        </div>
+    </div>
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $("#navbar-top").removeClass("navbar-menu-top");
+        } else {
+            $("#navbar-top").addClass("navbar-menu-top");
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.button-outline(@color) {
+  color: @color;
+  background-color: transparent;
+  border-color: @color;
+  border-width: 2px;
+  font-weight: 500;
+
+  &:focus,
+  &.focus {
+    color: @color;
+  }
+  &:hover {
+    color: #fff;
+    background-color: @color;
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    color: @color;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: @color;
+    }
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      border-color: @color;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: @color;
+  }
+}
+
+
+@spacing-size: zero 0px, xs 5px, sm 12px, md 20px, lg 30px;
+
+.createSpacing(@prefix, @property, @iterator:1) when(@iterator <= length(@spacing-size)) {
+    @name: extract(extract(@spacing-size, @iterator),1);
+    @value: extract(extract(@spacing-size, @iterator),2);
+    .@{prefix}-@{name} {
+        @{property}: @value;
+    }
+    .createSpacing(@prefix, @property, (@iterator + 1));
+}
+
+
+.breadcrumb-contextual(@bg-color) {
+    background-color: @bg-color;
+    a {
+        color: #fff;
+    }
+    > .active {
+        color: #fafafa;
+        font-weight: 600;
+    }
+    > li + li:before {
+        color: #fff;
+    }
+}

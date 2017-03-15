@@ -1,3 +1,5 @@
 bootstrap-4.0.0-alpha.6/scss/*.css*
 .sass-cache
 t.diff
+compile.sh
+*.css.map
