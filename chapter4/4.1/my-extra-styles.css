@@ -796,3 +796,35 @@ fieldset[disabled] .btn-danger-outline.focus {
 .alert-danger-outline .alert-link {
   color: #af221b;
 }
+.list-group-item-success {
+  background-color: #2EB872;
+  border: 1px solid #2EB872;
+}
+.list-group-item-success .badge {
+  background-color: #fff;
+  color: #2EB872;
+}
+.list-group-item-info {
+  background-color: #497cb1;
+  border: 1px solid #497cb1;
+}
+.list-group-item-info .badge {
+  background-color: #fff;
+  color: #497cb1;
+}
+.list-group-item-warning {
+  background-color: #f89b20;
+  border: 1px solid #f89b20;
+}
+.list-group-item-warning .badge {
+  background-color: #fff;
+  color: #f89b20;
+}
+.list-group-item-danger {
+  background-color: #E03E36;
+  border: 1px solid #E03E36;
+}
+.list-group-item-danger .badge {
+  background-color: #fff;
+  color: #E03E36;
+}
