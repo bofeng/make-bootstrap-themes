@@ -710,3 +710,45 @@ fieldset[disabled] .btn-danger-outline.focus {
   background-color: #d44942;
   border-color: #db2a22;
 }
+.panel-default-top {
+  border: 1px solid #eee;
+  border-top: 4px solid #555;
+}
+.panel-default-top .panel-heading {
+  border-bottom: 1px solid #eee;
+}
+.panel-primary-top {
+  border: 1px solid #eee;
+  border-top: 4px solid #ed745e;
+}
+.panel-primary-top .panel-heading {
+  border-bottom: 1px solid #eee;
+}
+.panel-success-top {
+  border: 1px solid #eee;
+  border-top: 4px solid #2EB872;
+}
+.panel-success-top .panel-heading {
+  border-bottom: 1px solid #eee;
+}
+.panel-info-top {
+  border: 1px solid #eee;
+  border-top: 4px solid #497cb1;
+}
+.panel-info-top .panel-heading {
+  border-bottom: 1px solid #eee;
+}
+.panel-warning-top {
+  border: 1px solid #eee;
+  border-top: 4px solid #f89b20;
+}
+.panel-warning-top .panel-heading {
+  border-bottom: 1px solid #eee;
+}
+.panel-danger-top {
+  border: 1px solid #eee;
+  border-top: 4px solid #E03E36;
+}
+.panel-danger-top .panel-heading {
+  border-bottom: 1px solid #eee;
+}
