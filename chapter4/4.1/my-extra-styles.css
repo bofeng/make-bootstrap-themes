@@ -752,3 +752,47 @@ fieldset[disabled] .btn-danger-outline.focus {
 .panel-danger-top .panel-heading {
   border-bottom: 1px solid #eee;
 }
+.alert-success-outline {
+  background-color: #f7fdfa;
+  border-color: #2EB872;
+  color: #29a465;
+}
+.alert-success-outline hr {
+  border-top-color: #29a465;
+}
+.alert-success-outline .alert-link {
+  color: #1f7b4c;
+}
+.alert-info-outline {
+  background-color: #f4f7fb;
+  border-color: #497cb1;
+  color: #426f9f;
+}
+.alert-info-outline hr {
+  border-top-color: #426f9f;
+}
+.alert-info-outline .alert-link {
+  color: #33567b;
+}
+.alert-warning-outline {
+  background-color: #fffaf5;
+  border-color: #f89b20;
+  color: #f79008;
+}
+.alert-warning-outline hr {
+  border-top-color: #f79008;
+}
+.alert-warning-outline .alert-link {
+  color: #c57306;
+}
+.alert-danger-outline {
+  background-color: #fdf4f4;
+  border-color: #E03E36;
+  color: #db2a22;
+}
+.alert-danger-outline hr {
+  border-top-color: #db2a22;
+}
+.alert-danger-outline .alert-link {
+  color: #af221b;
+}
