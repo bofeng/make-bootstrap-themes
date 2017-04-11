@@ -255,3 +255,57 @@
         }
     }
 }
+
+
+// bookmark
+.bookmark-container {
+    position: relative;
+}
+
+.bookmark {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 12px;
+    width: 28px;
+    padding: 8px 0px 12px;
+    color: #fff;
+    background-color: #555;
+    text-align: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 6px solid #fff;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+    }
+
+    &-default {
+        background-color: #555;
+    }
+
+    &-primary {
+        background-color: @brand-primary;
+    }
+
+    &-success {
+        background-color: @brand-success;
+    }
+
+    &-info {
+        background-color: @brand-info;
+    }
+
+    &-warning {
+        background-color: @brand-warning;
+    }
+
+    &-danger {
+        background-color: @brand-danger;
+    }
+}

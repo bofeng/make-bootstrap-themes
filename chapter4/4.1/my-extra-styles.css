@@ -896,3 +896,46 @@ fieldset[disabled] .btn-danger-outline.focus {
 .ribbon-danger .text {
   background: #E03E36;
 }
+.bookmark-container {
+  position: relative;
+}
+.bookmark {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  width: 28px;
+  padding: 8px 0px 12px;
+  color: #fff;
+  background-color: #555;
+  text-align: center;
+}
+.bookmark::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 6px solid #fff;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+}
+.bookmark-default {
+  background-color: #555;
+}
+.bookmark-primary {
+  background-color: #ed745e;
+}
+.bookmark-success {
+  background-color: #2EB872;
+}
+.bookmark-info {
+  background-color: #497cb1;
+}
+.bookmark-warning {
+  background-color: #f89b20;
+}
+.bookmark-danger {
+  background-color: #E03E36;
+}
