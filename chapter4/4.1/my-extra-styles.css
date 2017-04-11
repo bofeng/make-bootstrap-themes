@@ -828,3 +828,71 @@ fieldset[disabled] .btn-danger-outline.focus {
   background-color: #fff;
   color: #E03E36;
 }
+.ribbon-container {
+  position: relative;
+}
+.ribbon-container > h3 {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px dotted #ddd;
+}
+.ribbon {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: right;
+}
+.ribbon .text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #555;
+  position: absolute;
+  top: 15px;
+  right: -25px;
+}
+.ribbon .text::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+}
+.ribbon .text::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+}
+.ribbon-default .text {
+  background: #555;
+}
+.ribbon-primary .text {
+  background: #ed745e;
+}
+.ribbon-success .text {
+  background: #2EB872;
+}
+.ribbon-info .text {
+  background: #497cb1;
+}
+.ribbon-warning .text {
+  background: #f89b20;
+}
+.ribbon-danger .text {
+  background: #E03E36;
+}

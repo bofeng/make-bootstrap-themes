@@ -3,3 +3,4 @@ bootstrap-4.0.0-alpha.6/scss/*.css*
 t.diff
 compile.sh
 *.css.map
+.DS_Store

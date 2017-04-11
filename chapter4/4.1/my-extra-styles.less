@@ -172,3 +172,86 @@
     .list-group-item-contextual(@brand-danger);
 }
 
+
+// Ribbon
+.ribbon-container {
+    position: relative;
+    > h3 {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px dotted #ddd;
+    }
+}
+
+.ribbon {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+    .text {
+        font-size: 14px;
+        font-weight: bold;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 20px;
+        .rotate(45deg);
+        width: 100px;
+        display: block;
+        background: #555;
+        position: absolute;
+        top: 15px;
+        right: -25px;
+
+        &::before {
+            content: ""; 
+            position: absolute; left: 0px; top: 100%;
+            z-index: -1; 
+        }
+        &::after {
+            content: ""; 
+            position: absolute; right: 0px; top: 100%;
+            z-index: -1; 
+        }
+    }
+
+    &-default {
+        .text {
+            background: #555;
+        }
+    }
+
+    &-primary {
+        .text {
+            background: @brand-primary;
+        }
+    }
+
+    &-success {
+        .text {
+            background: @brand-success;
+        }
+    }
+
+    &-info {
+        .text {
+            background: @brand-info;
+        }
+    }
+
+    &-warning {
+        .text {
+            background: @brand-warning;
+        }
+    }
+
+    &-danger {
+        .text {
+            background: @brand-danger;
+        }
+    }
+}
