@@ -309,3 +309,48 @@
         background-color: @brand-danger;
     }
 }
+
+
+// image
+.img-hover-container {
+    overflow:hidden;
+}
+
+.img-hover-fadeout:hover {
+    .opacity(0.8);
+}
+
+.img-hover-scale:hover {
+    .scale(1.2);
+}
+
+.img-hover-scale-rotate:hover {
+    .transform(scale(1.2) rotate(8deg));
+}
+
+@keyframes swing
+{
+    15% {
+        .translate(5px; 0);
+    }
+    30% {
+        .translate(-5px; 0);
+    }
+    50% {
+        .translate(3px; 0);
+    }
+    65% {
+        .translate(-3px; 0);
+    }
+    80% {
+        .translate(2px; 0);
+    }
+    100% {
+        .translate(0; 0);
+    }
+}
+
+.img-hover-swing:hover {
+    .animation(swing 1s ease-in-out);
+}
+

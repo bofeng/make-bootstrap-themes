@@ -939,3 +939,65 @@ fieldset[disabled] .btn-danger-outline.focus {
 .bookmark-danger {
   background-color: #E03E36;
 }
+.img-hover-container {
+  overflow: hidden;
+}
+.img-hover-fadeout:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.img-hover-scale:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.img-hover-scale-rotate:hover {
+  -webkit-transform: scale(1.2) rotate(8deg);
+  -moz-transform: scale(1.2) rotate(8deg);
+  -ms-transform: scale(1.2) rotate(8deg);
+  -o-transform: scale(1.2) rotate(8deg);
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translate(5px, 0);
+    -ms-transform: translate(5px, 0);
+    -o-transform: translate(5px, 0);
+    transform: translate(5px, 0);
+  }
+  30% {
+    -webkit-transform: translate(-5px, 0);
+    -ms-transform: translate(-5px, 0);
+    -o-transform: translate(-5px, 0);
+    transform: translate(-5px, 0);
+  }
+  50% {
+    -webkit-transform: translate(3px, 0);
+    -ms-transform: translate(3px, 0);
+    -o-transform: translate(3px, 0);
+    transform: translate(3px, 0);
+  }
+  65% {
+    -webkit-transform: translate(-3px, 0);
+    -ms-transform: translate(-3px, 0);
+    -o-transform: translate(-3px, 0);
+    transform: translate(-3px, 0);
+  }
+  80% {
+    -webkit-transform: translate(2px, 0);
+    -ms-transform: translate(2px, 0);
+    -o-transform: translate(2px, 0);
+    transform: translate(2px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.img-hover-swing:hover {
+  -webkit-animation: swing 1s ease-in-out;
+  -o-animation: swing 1s ease-in-out;
+  animation: swing 1s ease-in-out;
+}
