@@ -4,3 +4,5 @@ t.diff
 compile.sh
 *.css.map
 .DS_Store
+chapter3/3.4/my-theme.css
+chapter5/5.4/my-theme.css

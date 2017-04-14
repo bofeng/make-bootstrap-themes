@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+$font-family-serif: 'Roboto Slab', Georgia, "Times New Roman", serif;
+$font-family-base: $font-family-serif;
+
+$enable-rounded: false;
+
+// brand contextual colors
+$brand-primary: #3B4A6B;
+$brand-success: #52D681;
+$brand-info: #22B2DA;
+$brand-warning: #FFC24A;
+$brand-danger: #F23557;
+
+// state contextual colors
+$state-success-text:        $brand-success;
+$state-success-bg:          lighten($state-success-text, 40%);
+$state-success-border:      $state-success-text;
+
+$state-info-text:           $brand-info;
+$state-info-bg:             lighten($state-info-text, 45%);
+$state-info-border:         $state-info-text;
+
+$state-warning-text:        $brand-warning;
+$state-warning-bg:          lighten($state-warning-text, 34%);
+$state-warning-border:      $state-warning-text;
+
+$state-danger-text:         $brand-danger;
+$state-danger-bg:           lighten($state-danger-text, 40%);
+$state-danger-border:       $state-danger-text;
+
+@import "../../bootstrap-4.0.0-alpha.6/scss/bootstrap";
