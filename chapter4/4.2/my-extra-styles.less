@@ -62,6 +62,7 @@
 }
 
 
+// == Outline buttons
 .btn {
     .transition-eio;
 
@@ -190,7 +191,6 @@
     overflow: hidden;
     width: 75px;
     height: 75px;
-    text-align: right;
     .text {
         font-size: 14px;
         font-weight: bold;
@@ -205,17 +205,6 @@
         position: absolute;
         top: 15px;
         right: -25px;
-
-        &::before {
-            content: ""; 
-            position: absolute; left: 0px; top: 100%;
-            z-index: -1; 
-        }
-        &::after {
-            content: ""; 
-            position: absolute; right: 0px; top: 100%;
-            z-index: -1; 
-        }
     }
 
     &-default {
@@ -264,7 +253,7 @@
 .bookmark {
     display: inline-block;
     position: absolute;
-    top: 0;
+    top: -1px;
     right: 12px;
     width: 28px;
     padding: 8px 0px 12px;
@@ -427,4 +416,3 @@
         background: darken(#f7931e, 10%);
     }
 }
-

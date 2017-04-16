@@ -844,7 +844,6 @@ fieldset[disabled] .btn-danger-outline.focus {
   overflow: hidden;
   width: 75px;
   height: 75px;
-  text-align: right;
 }
 .ribbon .text {
   font-size: 14px;
@@ -863,20 +862,6 @@ fieldset[disabled] .btn-danger-outline.focus {
   position: absolute;
   top: 15px;
   right: -25px;
-}
-.ribbon .text::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 100%;
-  z-index: -1;
-}
-.ribbon .text::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  top: 100%;
-  z-index: -1;
 }
 .ribbon-default .text {
   background: #555;
@@ -902,7 +887,7 @@ fieldset[disabled] .btn-danger-outline.focus {
 .bookmark {
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: -1px;
   right: 12px;
   width: 28px;
   padding: 8px 0px 12px;
@@ -957,6 +942,7 @@ fieldset[disabled] .btn-danger-outline.focus {
   -moz-transform: scale(1.2) rotate(8deg);
   -ms-transform: scale(1.2) rotate(8deg);
   -o-transform: scale(1.2) rotate(8deg);
+  transform: scale(1.2) rotate(8deg);
 }
 @keyframes swing {
   15% {
