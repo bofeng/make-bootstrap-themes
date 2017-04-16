@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Additional styles</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../4.1/my-theme.css"/>
+    <link rel="stylesheet" href="../4.2/my-extra-styles.css"/>
+    <link rel="stylesheet" href="animations/animations.css"/>
+    <link rel="stylesheet" href="switch/css/bootstrap-switch.min.css"/>
+    <link rel="stylesheet" href="colorpicker/css/bootstrap-colorpicker.min.css"/>
+    <link rel="stylesheet" href="datepicker/css/bootstrap-datepicker3.min.css"/>
+    <link rel="stylesheet" href="timepicker/css/bootstrap-timepicker.min.css"/>
+    <link rel="stylesheet" href="lightbox/css/ekko-lightbox.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+    .section-title {margin-top:40px; margin-bottom:30px; font-weight:500}
+    #header-bg-wrapper {height:500px;background:#333;position:relative;background:url('../header-bg.jpg') no-repeat;background-size:cover;}
+    #header-bg-wrapper h1 {color:#fff;padding-top:160px;margin-top:0px;font-size:45px;font-weight:600}
+    .section-subtitle {font-weight: 400}
+    .feature-icon {font-size: 60px; color:#ed745e}
+    .slide-item {visibility: hidden;}
+    .bootstrap-switch {border-radius: 0;}
+    .bootstrap-switch .bootstrap-switch-handle-off {border-radius: 0;}
+    .bootstrap-switch .bootstrap-switch-handle-on {border-radius: 0;}
+    .colorpicker {border-radius: 0;}
+    .bootstrap-timepicker-widget table td a:hover {border-radius: 0;}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-menu-top transition-eio" id="navbar-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-default">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="font-family:'Dosis'">
+                    <i class="fa fa-snowflake-o"></i>
+                    Snowflake
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="../4.1/theme-styles.html">Theme Styles</a></li>
+                    <li><a href="../4.2/additional-styles.html">Additional Styles</a></li>
+                    <li><a href="#">Alerts <span class="badge">3</span></a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="header-bg-wrapper">
+        <h1 class="text-center">Plugins</h1>
+        <div class="text-center" style="margin-top:120px">
+            <button class="btn btn-lg btn-primary">Explore <i class="fa fa-chevron-down"></i></button>
+        </div>
+    </div>
+    <div class="section container">
+        <h2 class="text-center section-title">Animations</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 text-center mb-lg slideUp">
+                <i class="fa fa-plane feature-icon"></i>
+                <h4 class="section-subtitle mt-lg">Feature #1</h4>
+                <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg slideUp">
+                <i class="fa fa-compass feature-icon"></i>
+                <h4 class="section-subtitle mt-lg">Feature #2</h4>
+                <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg slideUp">
+                <i class="fa fa-gear feature-icon"></i>
+                <h4 class="section-subtitle mt-lg">Feature #3</h4>
+                <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg slide-item">
+                <i class="fa fa-rocket feature-icon"></i>
+                <h4 class="section-subtitle mt-lg">Feature #4</h4>
+                <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg slide-item">
+                <i class="fa fa-book feature-icon"></i>
+                <h4 class="section-subtitle mt-lg">Feature #5</h4>
+                <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg slide-item">
+                <i class="fa fa-paint-brush feature-icon"></i>
+                <h4 class="section-subtitle mt-lg">Feature #6</h4>
+                <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section container slide-item" data-slidetype="slideLeft">
+        <h2 class="text-center section-title">Switch</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Default with checked state</h4>
+                <input type="checkbox" name="bs-switch" data-size="normal" checked />
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Default with unchecked state</h4>
+                <input type="checkbox" name="bs-switch" data-size="normal"/>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Success color with checked state</h4>
+                <input type="checkbox" name="bs-switch" data-size="normal" data-oncolor="success" checked />
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Small size</h4>
+                <input type="checkbox" name="bs-switch" data-size="small" data-oncolor="success" checked />
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Small size with danger color</h4>
+                <input type="checkbox" name="bs-switch" data-size="small" data-oncolor="success" data-offcolor="danger"/>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Small size with YES/NO label</h4>
+                <input type="checkbox" name="bs-switch" data-size="small" data-oncolor="success" data-ontext="YES" data-offtext="NO" checked/>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Mini size</h4>
+                <input type="checkbox" name="bs-switch" data-size="mini" checked />
+            </div>
+
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Mini size with SHOW/HIDE label</h4>
+                <input type="checkbox" name="bs-switch" data-size="mini" data-oncolor="success"
+                 data-ontext="SHOW" data-offtext="HIDE"/>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Mini size with info color</h4>
+                <input type="checkbox" name="bs-switch" data-size="mini" data-oncolor="info" checked />
+            </div>
+        </div>
+    </div>
+
+    <div class="section container slide-item" data-slidetype="slideRight">
+        <h2 class="text-center section-title">Color Picker</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Default</h4>
+                <div class="form-group">
+                    <input type="text" class="form-control cp" value="#ff6600" data-align="left"/>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">As a component</h4>
+                <div class="input-group colorpicker-component cp">
+                    <input type="text" class="form-control" value="#00b2ff"/>
+                    <span class="input-group-addon"><i></i></span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">RGB format</h4>
+                <div class="input-group colorpicker-component cp" data-format="rgb">
+                    <input type="text" class="form-control" value="#ff6600"/>
+                    <span class="input-group-addon"><i></i></span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Labeled Color Palette</h4>
+                <div class="input-group colorpicker-component cp" data-format="alias"
+                    data-palette='{"black": "#000000", "white": "#ffffff", "info": "#497cb1", "success": "#2eb872", "warning": "#f89b20", "danger": "#e03e36"}'
+                    >
+                    <input type="text" class="form-control" value="black"/>
+                    <span class="input-group-addon"><i></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section container slide-item" data-slidetype="expandUp">
+        <h2 class="text-center section-title">Date &amp; Time Picker</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Date Picker as Component</h4>
+                <div class="input-group date dp">
+                    <input type="text" class="form-control" value="04/16/2017">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Date Picker as Range</h4>
+                <div class="input-daterange input-group dp">
+                    <input type="text" class="form-control" name="start" value="04/16/2017"/>
+                    <span class="input-group-addon">to</span>
+                    <input type="text" class="form-control" name="end" value="04/17/2017"/>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Default Time Picker</h4>
+                <div class="input-group bootstrap-timepicker">
+                    <input type="text" class="form-control tp-default" />
+                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">24hr Time Picker</h4>
+                <div class="input-group bootstrap-timepicker">
+                    <input type="text" class="form-control tp-24" />
+                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section container slide-item mb-lg" data-slidetype="fadeIn">
+        <h2 class="text-center section-title">Image Gallery Lightbox</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Picture #1</h4>
+                <a href="https://unsplash.it/1200/768.jpg?image=1081" data-toggle="lightbox"
+                    data-gallery="gallery-1">
+                    <img src="https://unsplash.it/300.jpg?image=1081" class="img img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Picture #2</h4>
+                <a href="https://unsplash.it/1200/768.jpg?image=1060" data-toggle="lightbox"
+                    data-gallery="gallery-1">
+                    <img src="https://unsplash.it/300.jpg?image=1060" class="img img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Picture #3</h4>
+                <a href="https://unsplash.it/1200/768.jpg?image=1083" data-toggle="lightbox"
+                    data-gallery="gallery-1">
+                    <img src="https://unsplash.it/300.jpg?image=1083" class="img img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-center mb-lg">
+                <h4 class="section-subtitle mb-md">Picture #4</h4>
+                <a href="https://unsplash.it/1200/768.jpg?image=1084" data-toggle="lightbox"
+                    data-gallery="gallery-1">
+                    <img src="https://unsplash.it/300.jpg?image=1084" class="img img-responsive">
+                </a>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="switch/js/bootstrap-switch.min.js"></script>
+<script src="colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="timepicker/js/bootstrap-timepicker.min.js"></script>
+<script src="lightbox/js/ekko-lightbox.min.js"></script>
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 80) {
+        $("#navbar-top").removeClass("navbar-menu-top");
+    } else {
+        $("#navbar-top").addClass("navbar-menu-top");
+    }
+
+    $(".slide-item").each(function(){
+		var itemTop = $(this).offset().top;
+		var topOffset = $(window).scrollTop();
+		if (itemTop < topOffset + 550) {
+			$(this).addClass($(this).attr("data-slidetype") || "slideUp");
+		}
+	});
+});
+
+$("[name='bs-switch']").each(function () {
+    var sw = $(this),
+        size = sw.attr("data-size"),
+        onColor = sw.attr("data-oncolor") || "primary",
+        offColor = sw.attr("data-offcolor") || "default",
+        onText = sw.attr("data-ontext") || "ON",
+        offText = sw.attr("data-offtext") || "OFF";
+
+    sw.bootstrapSwitch({
+        size: size,
+        onColor: onColor,
+        offColor: offColor,
+        onText: onText,
+        offText: offText
+    });
+});
+
+$(".cp").each(function () {
+    var cp = $(this),
+        align = cp.attr("data-align") || "right",
+        format = cp.attr("data-format") || false,
+        palette = cp.attr("data-palette") || null;
+    cp.colorpicker({
+        align: align,
+        format: format,
+        colorSelectors: palette ? JSON.parse(palette) : null
+    });
+});
+
+$(".dp").each(function () {
+    $(this).datepicker();
+});
+
+$(".tp-default").timepicker();
+$(".tp-24").timepicker({
+    autoclose: true,
+    minuteStep: 1,
+    showSeconds: true,
+    showMeridian: false
+});
+
+$("[data-toggle='lightbox']").click(function (evt) {
+    evt.preventDefault();
+    $(this).ekkoLightbox();
+});
+
+</script>
+</body>
+</html>
