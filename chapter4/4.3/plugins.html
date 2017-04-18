@@ -233,28 +233,28 @@
                 <h4 class="section-subtitle mb-md">Picture #1</h4>
                 <a href="https://unsplash.it/1200/768.jpg?image=1081" data-toggle="lightbox"
                     data-gallery="gallery-1">
-                    <img src="https://unsplash.it/300.jpg?image=1081" class="img img-responsive">
+                    <img src="https://unsplash.it/300.jpg?image=1081" class="img img-responsive img-hover-fadeout transition-eio">
                 </a>
             </div>
             <div class="col-xs-12 col-sm-3 text-center mb-lg">
                 <h4 class="section-subtitle mb-md">Picture #2</h4>
                 <a href="https://unsplash.it/1200/768.jpg?image=1060" data-toggle="lightbox"
                     data-gallery="gallery-1">
-                    <img src="https://unsplash.it/300.jpg?image=1060" class="img img-responsive">
+                    <img src="https://unsplash.it/300.jpg?image=1060" class="img img-responsive img-hover-fadeout transition-eio">
                 </a>
             </div>
             <div class="col-xs-12 col-sm-3 text-center mb-lg">
                 <h4 class="section-subtitle mb-md">Picture #3</h4>
                 <a href="https://unsplash.it/1200/768.jpg?image=1083" data-toggle="lightbox"
                     data-gallery="gallery-1">
-                    <img src="https://unsplash.it/300.jpg?image=1083" class="img img-responsive">
+                    <img src="https://unsplash.it/300.jpg?image=1083" class="img img-responsive img-hover-fadeout transition-eio">
                 </a>
             </div>
             <div class="col-xs-12 col-sm-3 text-center mb-lg">
                 <h4 class="section-subtitle mb-md">Picture #4</h4>
                 <a href="https://unsplash.it/1200/768.jpg?image=1084" data-toggle="lightbox"
                     data-gallery="gallery-1">
-                    <img src="https://unsplash.it/300.jpg?image=1084" class="img img-responsive">
+                    <img src="https://unsplash.it/300.jpg?image=1084" class="img img-responsive img-hover-fadeout transition-eio">
                 </a>
             </div>
         </div>
@@ -276,12 +276,12 @@ $(window).scroll(function() {
     }
 
     $(".slide-item").each(function(){
-		var itemTop = $(this).offset().top;
-		var topOffset = $(window).scrollTop();
-		if (itemTop < topOffset + 550) {
-			$(this).addClass($(this).attr("data-slidetype") || "slideUp");
-		}
-	});
+        var itemTop = $(this).offset().top;
+        var topOffset = $(window).scrollTop();
+        if (itemTop < topOffset + 550) {
+            $(this).addClass($(this).attr("data-slidetype") || "slideUp");
+        }
+    });
 });
 
 $("[name='bs-switch']").each(function () {
@@ -329,7 +329,6 @@ $("[data-toggle='lightbox']").click(function (evt) {
     evt.preventDefault();
     $(this).ekkoLightbox();
 });
-
 </script>
 </body>
 </html>
