@@ -4,7 +4,7 @@ Code examples for book "Make Bootstrap Themes".
 
 
 # Code Credits
-In this repo, code in the following folders are taken from their original project:
+In this repo, code in the following folders are taken from their original projects:
 
 * bootstrap-3.3.7: [https://github.com/twbs/bootstrap/tree/v3.3.7](https://github.com/twbs/bootstrap/tree/v3.3.7)
 * bootstrap-4.0.0-alpha.6: [https://github.com/twbs/bootstrap/tree/v4.0.0-alpha.6](https://github.com/twbs/bootstrap/tree/v4.0.0-alpha.6)
