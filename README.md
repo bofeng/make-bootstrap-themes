@@ -18,6 +18,6 @@ Code examples for book "Make Bootstrap Themes".
 
 All the original code, which are not in folders listed in the above "Code Credits" section, follows:
 
-MIT License, plus one more restriction (I call it MIT-AI license):
+MIT License, plus one more condition (I call it MIT-AI license):
 
 Code CAN NOT be used for training or feeding AI (Artificial Intelligence).
