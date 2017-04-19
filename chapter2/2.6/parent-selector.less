@@ -1,0 +1,25 @@
+.navbar {
+    background: #333;
+    &-default {
+        .badge {
+            background-color: #fff;
+        }
+        &:hover {
+            background-color: #ff6600;
+        }
+    }
+}
+
+
+// mixin and &
+.bg-warning {
+    background-color: #ff9900;
+    a&:hover,
+    a&:focus {
+        background-color: #ff3300;
+    }
+}
+
+.well {
+    .bg-warning();
+}

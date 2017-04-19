@@ -1,0 +1,28 @@
+.bordered {
+    border: 1px dotted black;
+}
+.panel {
+    background: #e1e1e1;
+    .bordered();
+}
+
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+.btn {
+    font-size: 14px;
+    .border-radius(5px);
+}
+
+
+.box(@margin, @padding) {
+    margin: @margin;
+    padding: @padding;
+}
+.quote {
+    .box(5px, 10px);
+}
+

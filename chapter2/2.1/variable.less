@@ -1,0 +1,22 @@
+@color: #339900;
+@theme-prefix: nebula;
+
+// use variable
+.text-warn {
+    color: @color;
+}
+
+.panel-warn {
+    color: #fff;
+    background-color: @color;
+}
+
+// variable interpolation
+.@{theme-prefix}-mt-lg {
+    margin-top: 40px;
+}
+
+// plain CSS keep unchanged in the output
+.invisible {
+    visibility: hidden;
+}

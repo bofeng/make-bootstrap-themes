@@ -1,0 +1,21 @@
+.base-font {
+  font-family: Arial, Verdana, sans-serif;
+  color: #000;
+}
+
+h1 {
+  &:extend(.base-font);
+  font-size: 2em;
+}
+
+.panel-warning {
+  &:extend(.base-font);
+  background-color: #ff9900;
+  color: #fff;
+}
+
+.alert-danger {
+  &:extend(.base-font);
+  background-color: #ff3300;
+  color: #fff;
+}
